@@ -37,6 +37,7 @@ aside h1{
 }
 aside p{
     width: 26rem;
+    font-size: var(--size-base);
 }
 
 .background-shape{
