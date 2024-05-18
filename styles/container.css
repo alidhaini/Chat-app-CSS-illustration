@@ -8,8 +8,8 @@ header{
     background-image: linear-gradient(to bottom, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
-    margin-left: -6rem;
-    width: calc(100% + 2rem);
+    margin-left: -10rem;
+    width: calc(100% + 6rem);
     height: 90vh;
 }
 .phone{
@@ -20,7 +20,7 @@ header{
     z-index: 999;
     position: absolute;
     transform: translate(50%,50%);
-    top: -10rem;
+    top: -5rem;
     right: -3rem;
 }
 aside{
@@ -33,7 +33,7 @@ aside h1{
     font-size: var(--size-4xl);
     color: var(--clr-veryDarkDesaturatedViolet);
     font-weight: 500;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 aside p{
     width: 26rem;
@@ -42,10 +42,10 @@ aside p{
 .background-shape{
     position: absolute;
     height: 100%;
-    width: 35%;
+    width: calc(35% + 7rem);
     background-color: rgba(145, 35, 220, 0.022);
     top: 4rem;
-    right: -10rem;
+    right: -16rem;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     z-index: -10;
