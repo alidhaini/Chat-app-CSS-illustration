@@ -1,0 +1,108 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 100vh;
+}
+header{
+    position: relative;
+    background-image: linear-gradient(to bottom, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    margin-left: -6rem;
+    width: calc(100% + 2rem);
+    height: 90vh;
+}
+.phone{
+    height: 28.2rem;
+    width: 15rem;
+    border-radius: 1.5rem;
+    background-color: var(--clr-white);
+    z-index: 999;
+    position: absolute;
+    transform: translate(50%,50%);
+    top: -10rem;
+    right: -3rem;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+aside h1{
+    font-size: var(--size-4xl);
+    color: var(--clr-veryDarkDesaturatedViolet);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+aside p{
+    width: 26rem;
+}
+
+.background-shape{
+    position: absolute;
+    height: 100%;
+    width: 35%;
+    background-color: rgba(145, 35, 220, 0.022);
+    top: 4rem;
+    right: -10rem;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    z-index: -10;
+}
+@media (max-width: 1024px) {
+    .container{
+        grid-template-columns: 1fr 3fr;
+        column-gap: 4rem;
+    }
+}
+@media (max-width:768px) {
+    .container{
+        grid-template-columns: 1fr;
+        gap: 6rem;
+    }
+    header{
+        position: relative;
+        background-image: linear-gradient(to bottom, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        margin-left: 0rem;
+        height: 80vh;
+        margin-left: -20rem;
+        width: calc(50% + 20rem);
+    }
+    .phone{
+        height: 28.2rem;
+        width: 15rem;
+        border-radius: 1.5rem;
+        z-index: 999;
+        position: absolute;
+        transform: translate(50%,50%);
+        top: -13rem;
+        right: 0;
+        margin: 0 auto;
+    }
+    aside{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 3rem;
+        
+    }
+    aside h1{
+        font-size: var(--size-4xl);
+        color: var(--clr-veryDarkDesaturatedViolet);
+        font-weight: 500;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    aside p{
+        width: 18rem;
+        font-size: var(--size-xs);
+        text-align: center;
+    }
+    .background-shape{
+        display: none;
+    }
+}

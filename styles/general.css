@@ -1,0 +1,85 @@
+:root{
+    --clr-paleViolet: hsl(276, 100%, 81%);
+    --clr-moderateViolet: hsl(276, 55%, 52%);
+    --clr-desaturatedDarkViolet: hsl(271, 15%, 43%);
+    --clr-grayishBlue:hsl(206, 6%, 79%);
+    --clr-veryDarkDesaturatedViolet: hsl(271, 36%, 24%);
+    --clr-darkGrayishViolet: hsl(270, 7%, 64%);
+
+    --clr-lightMagenta: hsl(293, 100%, 63%);
+    --clr-lightViolet: hsl(264, 100%, 61%);
+
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-lightGrayishViolet: hsl(270, 20%, 96%);
+    --clr-veryDarkDesaturatedViolet: hsl(271, 36%, 24%);
+    --clr-veryLightMagenta: hsl(289, 100%, 72%);
+
+    /* sizes (from tailwind css) */
+    --size-xxs: 0.5rem;
+    --size-xs: 0.75rem;
+    --size-sm: 0.875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+    line-height: calc(1em + 0.5rem);
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+
+}
+body {
+    font-family: 'Rubik';
+    background-color: var(--clr-lightGrayishViolet);
+    color: var(--clr-light);
+    font-size: 16px;
+    min-height: 100vh;
+    overflow: hidden;
+    /* height: -webkit-fill-available;  */
+}
+@media (max-width:768px) {
+    body{
+        overflow: scroll;
+    }
+}
+img,
+video,
+picture,
+svg,
+canvas {
+        display: block;
+        max-width: 100%;
+        user-select: none;
+}
+button {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: inherit;
+    font-family: inherit;
+}
+p{
+    font-size: 15px;
+    color: var(--clr-darkGrayishViolet);
+}
+a{  
+    text-decoration: none;
+    font-family: inherit;
+}
+strong{
+}
